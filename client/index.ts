@@ -77,7 +77,7 @@ export class PumpFunSDK {
   ): Promise<TransactionResult> {
     let globalAccount = await this.getGlobalAccount();
 
-    let tokenMetadata: any = await this.createTokenMetadata(createTokenMetadata);
+    let tokenMetadata: CreateTokenMetadata = await this.createTokenMetadata(createTokenMetadata);
     console.log(tokenMetadata);
 
     let createTx = await this.getCreateInstructions(
