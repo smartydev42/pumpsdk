@@ -1,4 +1,4 @@
-{
+const pfIdl = {
   "address": "6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P",
   "metadata": {
     "name": "pump",
@@ -730,4 +730,6 @@
       "msg": "Withdraw too frequent"
     }
   ]
-}
+} as const;
+
+export default pfIdl;

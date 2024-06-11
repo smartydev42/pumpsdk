@@ -6,7 +6,7 @@ import {
   PublicKey,
   Transaction,
 } from "@solana/web3.js";
-import idl from "./pump-fun.json";
+import pfIdl from "./pumpfunAbi";
 import { Idl, Program, Provider } from "@coral-xyz/anchor";
 import { GlobalAccount } from "./globalAccount";
 import {
@@ -60,10 +60,10 @@ export const DEFAULT_DECIMALS = 6;
 const DEFAULT_COMMITMENT: Commitment = "finalized";
 
 export class PumpFunSDK {
-  public program: Program<Idl>;
+  public program: Program<pfIdl>;
   public connection: Connection;
   constructor(provider?: Provider) {
-    this.program = new Program(idl as Idl, provider);
+    this.program = new Program(pfIdl as Idl, provider);
     this.connection = this.program.provider.connection;
   }
 
