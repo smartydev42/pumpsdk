@@ -20,5 +20,6 @@
     "@metaplex-foundation/mpl-token-metadata": "^3.2.1",
     "@solana/spl-token": "^0.4.6",
     "@solana/web3.js": "^1.92.1"
-  }
+  },
+  "type": "module"
 }
